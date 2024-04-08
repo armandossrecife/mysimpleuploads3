@@ -1,8 +1,6 @@
-# Configurações necessárias para acessar um bucket do S3
+# Passos para criar uma aplicação de upload e listagem de imagens usando um bucket do S3
 
-Passos para criar uma aplicação de upload e download de arquivos armazenados em um bucket do S3
-
-## 1. Criando um bucket no S3, com as propriedades padrões, para armazenar imagens
+## 1. Criando um bucket no S3, com as propriedades padrões, para armazenar arquivos
 
 Nome do bucket: my-app-files-bucket
 
