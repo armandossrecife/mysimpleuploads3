@@ -42,7 +42,7 @@ def upload_page():
                 flash("Tipo de arquivo não permitido!")
                 return redirect(url_for('upload_page'))
 
-            new_filename = uuid.uuid4().hex + '.' + utilidades.get_file_extension(uploaded_file.filename)
+            new_filename = uuid.uuid4().hex + '.' + uploaded_file.filename.rsplit('.', 1)[1].lower()
             s3.upload_fileobj(uploaded_file, s3_handle.BUCKET_NAME, new_filename)
             file = banco.File(original_filename=uploaded_file.filename, filename=new_filename,
                 bucket=s3_handle.BUCKET_NAME, region=s3_handle.AWS_S3_REGION)
