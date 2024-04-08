@@ -4,6 +4,20 @@
     </head>
     <body>
         <h1>Bem vindo a página Home</h1>
-        <p>Bem vindo a página principal da aplicação</p>
+        <p>Upload e Downloads de Arquivos do AWS S3</p>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <ul class="flashes">
+            {% for message in messages %}
+              <h2>{{ message }}</h2>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% endwith %}        
+
+        <a href="/upload">Upload File</a>
+        <br>
+        <a href="/downloads">Download Files</a>
     </body>
 </html>
