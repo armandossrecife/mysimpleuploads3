@@ -2,11 +2,11 @@
 
 Aplicação web que faz uploads e downloads de arquivos em um bucket S3. 
 
+Telas: [Home](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/home.png) [Upload](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/upload_2.png) [Downloads](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/downloads.png) 
+
 [Dependências](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/dependencias.md)
 
 [Passos para criar um bucket S3 e configurações](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/passos_s3.md)
-
-Telas: [Home](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/home.png) [Upload](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/upload_2.png) [Downloads](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/downloads.png) 
 
 ## 1. Crie um ambiente virtual para a sua aplicação
 
