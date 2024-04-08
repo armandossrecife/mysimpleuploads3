@@ -2,7 +2,7 @@
 
 Aplicação web que faz uploads e downloads de arquivos em um bucket S3. 
 
-[Dependências](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/passos_s3.md)
+[Dependências](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/dependencias.md)
 
 [Passos para criar um bucket S3 e configurações](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/passos_s3.md)
 
