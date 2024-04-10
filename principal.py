@@ -69,7 +69,7 @@ def downloads_page():
 
     if not files: 
         flash('Nenhum arquivo para download!')
-        return redirect(url_for('downloads_page'))
+        return redirect(url_for('home_page'))
 
     return render_template("downloads.html", files=files)
 
