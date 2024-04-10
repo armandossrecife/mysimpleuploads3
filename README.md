@@ -10,7 +10,11 @@ Telas: [Home](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs
 
 [Arquitetura base](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/arquitetura.png)
 
-## 1. Crie um ambiente virtual para a sua aplicação
+[Execução da aplicação em uma instância EC2](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs/passos_ec2.md)
+
+## 1. No servidor da aplicação, crie um ambiente virtual para a sua aplicação
+
+Dentro do diretório principal (mysimpleuploads3$)
 
 ```bash
 python3 -m venv venv
@@ -33,7 +37,16 @@ Obs: para listar os pacotes e as respectivas versões dos pacotes instalos:
 pip3 list
 ```
 
-## 4. Execute a aplicação principal
+## 4. Carregue as credenciais do usuário de execução da aplicação
+
+Por exemplo: salvando as credencias AWS via variáveis de ambiente de Sistema Operacional (Linux/MacOS)
+
+```bash
+export ACCESS_KEY_ID=xxxxxxxxxxxxxxxx
+export SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+## 5. Execute a aplicação principal
 ```bash
 flask --app principal run --host=0.0.0.0 --port=5000
 ```

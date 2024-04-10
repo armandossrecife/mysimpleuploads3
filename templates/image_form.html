@@ -5,7 +5,7 @@
     <title>Downloads</title>
 </head>
 <body>
-    <h3>Lista de arquivos do S3</h3>
+    <h3>Arquivo do S3</h3>
 
     {% with messages = get_flashed_messages() %}
     {% if messages %}
@@ -17,12 +17,8 @@
     {% endif %}
     {% endwith %}        
     
-    {% for file in files %}
-    <div>
-        {{ file.original_filename }} - <a href="https://{{ file.bucket }}.s3.{{ file.region }}.amazonaws.com/{{ file.filename }}">download</a> 
-        - <a href="{{url_for('show_image', nome=file.filename)}}">View</a>
-    </div>
-    {% endfor %}
+    <h1>Image from S3 Byte Content</h1>
+    <img src="{{ image_data_uri }}" alt="Image from S3">
     <br>
     <a href="/">[Home]</a>
 </body>
