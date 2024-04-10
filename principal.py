@@ -86,9 +86,10 @@ def show_image(nome):
     bucket_path = "https://my-app-files-bucket.s3.amazonaws.com"
     image_url = bucket_path + "/" + nome
     image_bytes = get_image_bytes(image_url)
+    extensao = utilidades.get_file_extension(nome)
 
     encoded_bytes = base64.b64encode(image_bytes).decode('utf-8')  # Encode as base64 and decode for URI
-    image_data_uri = f"data:image/png;base64,{encoded_bytes}"
+    image_data_uri = f"data:image/{extensao};base64,{encoded_bytes}"
 
     return render_template("image_form.html", image_data_uri=image_data_uri)
 
