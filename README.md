@@ -14,7 +14,7 @@ Telas: [Home](https://github.com/armandossrecife/mysimpleuploads3/blob/main/docs
 
 ## 1. No servidor da aplicação, crie um ambiente virtual para a sua aplicação
 
-Dentro do diretório principal (mysimpleuploads3$)
+Dentro do diretório principal (mysimpleuploads3)
 
 ```bash
 python3 -m venv venv
