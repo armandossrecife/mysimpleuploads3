@@ -50,3 +50,5 @@ export SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```bash
 flask --app principal run --host=0.0.0.0 --port=5000
 ```
+
+Obs: Lembre-se de ajustar DROP_DATA_BASE=False caso você não queira perder os registros já armazenados no banco.
