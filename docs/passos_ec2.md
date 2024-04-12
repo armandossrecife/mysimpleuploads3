@@ -8,6 +8,8 @@ Crie uma instância do Ubuntu 22 no EC2 com as portas 5000 e 8000 liberadas (inb
 
 Faça as devidas configurações inbound/outbound no grupo de segurança da instância para liberar essas portas.
 
+Você pode criar sua instância na VPC default e usar a sub-rede default da sua VPC.
+
 ## 2. Execute a instância via console AWS 
 
 Acesse o terminal da instância e atualize os pacotes apt da instância
