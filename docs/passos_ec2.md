@@ -4,7 +4,7 @@ Caso você queira publicar a aplicação na sua infraestrutura ASW, via instânc
 
 ## 1. Criação da instância
 
-Crie uma instância do Ubuntu 22 no EC2 com as portas 5000 e 8000 liberadas para qualquer IP (0.0.0.0/0).
+Crie uma instância do Ubuntu 22 no EC2 com as portas 5000 e 8000 liberadas (inbound/outbound Firewall rules) para qualquer IP (0.0.0.0/0).
 
 Faça as devidas configurações inbound/outbound no grupo de segurança da instância para liberar essas portas.
 
@@ -33,4 +33,8 @@ Faça o clone do repositório mysimpleuploads3
 
 ## 5. Política de segurança IAM
 
-Faça uma associação de uma política de segurança de acesso completo aos serviços AWS S3
+Faça uma associação de uma política de segurança de acesso completo aos serviços AWS S3 e anexe a instância EC2 correspondente.
+
+## 6. Executar a aplicação principal
+
+Siga as instruções de commo executar a aplicação principal no diretório mysimpleuploads3
