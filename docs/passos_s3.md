@@ -4,6 +4,8 @@ Passos para criar uma aplicação de upload e listagem de arquivos usando um buc
 
 ## 1. Criando um bucket no S3, com as propriedades padrões, para armazenar arquivos
 
+Vá até o Console S3 da AWS -> clique no botão criar bucket
+
 Nome do bucket: my-app-files-bucket
 
 ## 2. Desabilite a opção "Bloquear Acesso Público"
