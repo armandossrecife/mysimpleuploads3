@@ -8,6 +8,8 @@ Vá até o Console S3 da AWS -> clique no botão criar bucket
 
 Nome do bucket: my-app-files-bucket
 
+Obs: o nome do bucket dever único, devido as regras de DNS dos serviços autogerenciáveis da AWS. 
+
 ## 2. Desabilite a opção "Bloquear Acesso Público"
 
 ## 3. Para liberar a leitura dos objetos desse bucket é preciso criar uma política
